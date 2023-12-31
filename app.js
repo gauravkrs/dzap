@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://dzapcrpto.vercel.app/",
+    origin: ["https://dzapcrpto.vercel.app", "http://localhost:3000"],
     methods: ["GET", "HEAD, POST", "PUT", "DELETE"],
     credentials: true,
   })
